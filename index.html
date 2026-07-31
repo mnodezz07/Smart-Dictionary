@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wordly - Smart Dictionary</title>
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="stylesheet" href="/scr/styles.css">
+</head>
+<body>
+
+    
+  <!-- Header Section -->
+  <header class="hero">
+    <div class="brand">
+      <img src="/img/wordly.png" alt="Wordly Logo" class="logo">
+      <div>
+        <h1>Smart Dictionary</h1>
+        <p>Your Smart Dictionary for every word</p>
+      </div>
+    </div>
+    <div class="underline" aria-hidden="true"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="search-card" aria-label="Word Search">
+      <div class="search-title">
+        <h2 class="italic">Search for any word to get its meaning</h2>
+      </div>
+
+      <!-- Search Form -->
+      <form id="searchForm" class="search-form" role="search">
+        <label for="wordInput" class="visually-hidden"></label>
+        <input 
+          type="text" 
+          id="wordInput" 
+          name="search" 
+          placeholder="Search for a word..." 
+          aria-label="Enter word to search"
+          required
+        >
+        <button type="submit" aria-label="Submit Search">Search</button>
+      </form>
+    </section>
+
+    <!-- Dynamic Results Container -->
+    <section id="results" class="results-container" aria-live="polite">
+      <!-- Search results, errors, or loading states populate here dynamically -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Wordly. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="/js/script.js"></script>
+</body>
+</html>
